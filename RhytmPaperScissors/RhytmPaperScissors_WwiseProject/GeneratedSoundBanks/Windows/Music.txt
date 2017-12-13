@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3827058668	StartMusic			\Default Work Unit\StartMusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	331204384	M2-PoolOrOutdoor_90BPM	D:\UnityProjects\Rhythm-Paper-Scissors\RhytmPaperScissors\RhytmPaperScissors_WwiseProject\.cache\Windows\SFX\M2-PoolOrOutdoor_90BPM_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\MusicPlaylist\New Music Segment\M2-PoolOrOutdoor_90BPM		23061296
+
