@@ -7,14 +7,22 @@ public class PlayerController : MonoBehaviour
 {
 
     public float moveSpeed;
+    //uint[] playingIDs;
 
 
     // Use this for initialization
     void Start()
     {
-        AkSoundEngine.PostEvent("StartMusic", gameObject);
+        // AkSoundEngine.PostEvent("StartMusic", gameObject);
         // AkSoundEngine.SetState("PlayerLife", "Alive");
 
+
+        //AkSoundEngine.GetPlayingIDsFromGameObject(gameObject, , playingIDs);
+
+        //AkMusicSyncCallbackInfo info = (AkMusicSyncCallbackInfo)in_info;
+        //float BeatLength = info.segmentInfo_fBeatDuration;
+        //float realBPM = 60 / BeatLength;
+        //Debug.Log("The real BPM is: " + realBPM);
     }
 
     // Update is called once per frame
@@ -23,7 +31,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
             transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
-            AkSoundEngine.SetState("PlayerLife", "Alive");
+            // AkSoundEngine.SetState("PlayerLife", "Alive");
 
 
         }
@@ -31,7 +39,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
         {
             transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
-            AkSoundEngine.SetState("PlayerLife", "Dead");
+            // AkSoundEngine.SetState("PlayerLife", "Dead");
 
         }
 
