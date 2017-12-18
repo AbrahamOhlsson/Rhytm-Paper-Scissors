@@ -18,11 +18,17 @@ public class EnemyMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+
+        Distance(playerDis);
+
         //If player is close
-		if(true)
+		if(playerDis <= 100)
         {
+            //Show diffrent attacks
+
+
             //If player is at attack range
-            if(true)
+            if(playerDis <= 50)
             {
 
             }
